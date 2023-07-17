@@ -98,7 +98,7 @@ def main():
     processes = []
     for i in range(len(device_names)):
         # it searches a venv
-        py = os.path.join(__file__, os.pardir, os.pardir, 'venv', 'bin', 'python')
+        py = os.path.join(__file__, os.pardir, os.pardir, 'venv', 'Scripts', 'python')
         py = os.path.abspath(py)
         script = os.path.abspath(os.path.join(__file__, os.pardir, 'test_application.py'))
         cmd = [py, script, '--algo', algo, '--appium_port',

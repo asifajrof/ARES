@@ -6,17 +6,17 @@ import warnings
 warnings.filterwarnings('ignore')
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # FATAL
 logging.getLogger('tensorflow').setLevel(logging.FATAL)
-# from rl_interaction.algorithms.DDPGExploration import DDPGAlgorithm
-from rl_interaction.algorithms.QLearnExploration import QLearnAlgorithm
-from rl_interaction.algorithms.SACExploration import SACAlgorithm
-from rl_interaction.algorithms.RandomExploration import RandomAlgorithm
-# from rl_interaction.algorithms.TD3Exploration import TD3Algorithm
-# from rl_interaction.algorithms.TestApp import TestApp
+# from algorithms.DDPGExploration import DDPGAlgorithm
+from algorithms.QLearnExploration import QLearnAlgorithm
+from algorithms.SACExploration import SACAlgorithm
+from algorithms.RandomExploration import RandomAlgorithm
+# from algorithms.TD3Exploration import TD3Algorithm
+# from algorithms.TestApp import TestApp
 import pickle
-from rl_interaction.utils.utils import AppiumLauncher, EmulatorLauncher, Utils
-from rl_interaction.RL_application_env import RLApplicationEnv
+from utils.utils import AppiumLauncher, EmulatorLauncher, Utils
+from RL_application_env import RLApplicationEnv
 from selenium.common.exceptions import InvalidSessionIdException, WebDriverException
-from rl_interaction.utils import apk_analyzer
+from utils import apk_analyzer
 from loguru import logger
 import subprocess
 
