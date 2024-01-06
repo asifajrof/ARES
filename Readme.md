@@ -6,7 +6,7 @@
 
 ## Appium
 
-- The latest Appium versions (Appium 2) are not compatible with the current version of the ARES code. We could make it work with Appium 1.23.
+- The latest Appium versions (Appium 2) are not compatible with the current version of the ARES code. We could make it work with Appium 1.22.3
 
 ## python virutal environment
 
